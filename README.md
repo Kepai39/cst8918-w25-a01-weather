@@ -252,6 +252,9 @@ Screenshot:
 - `kubectl get services -n cst8918`
 - `kubectl get pods -n cst8918`
 
+The Screenshot hand-in:
+![The Screenshot hand in](<Screenshot 2025-01-15 at 2.48.18 PM.png>)
+
 Files:
 
 - all files in the `k8s` folder
