@@ -21,6 +21,13 @@ spec:
         - name: weather-app-container
           # this is the Docker image that you created
           image: kepai39/cst8918-a01-weather-app:latest
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "250m"
+            limits:
+              memory: "128Mi"
+              cpu: "500m"
           ports:
             - containerPort: 8080
           env:
