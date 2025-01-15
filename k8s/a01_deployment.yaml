@@ -20,7 +20,7 @@ spec:
       containers:
         - name: weather-app-container
           # this is the Docker image that you created
-          image: <your-docker-hub-username>/cst8918-a01-weather-app:latest
+          image: kepai39/cst8918-a01-weather-app:latest
           ports:
             - containerPort: 8080
           env:
@@ -36,3 +36,9 @@ spec:
               valueFrom:
                 fieldRef:
                   fieldPath: status.podIP
+
+            - name: WEATHER_API_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: weather
+                  key: api-key
